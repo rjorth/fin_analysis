@@ -13,5 +13,5 @@ df = web.DataReader('TSLA', 'yahoo', start, end)
 #df.to_csv('tsla.csv')
 
 df = pd.read_csv('tsla.csv', parse_dates=True, index_col=0)
-df[['Open', 'High']].plot()
+df['Adj Close'].plot()
 plt.show()
